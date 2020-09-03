@@ -1,0 +1,2 @@
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ar qc libtiny-process-library.a  CMakeFiles/tiny-process-library.dir/process.cpp.o CMakeFiles/tiny-process-library.dir/process_unix.cpp.o
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib libtiny-process-library.a

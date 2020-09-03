@@ -1,0 +1,40 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+../tests/../process.hpp
+functional
+-
+memory
+-
+mutex
+-
+string
+-
+thread
+-
+unordered_map
+-
+vector
+-
+sys/wait.h
+-
+
+/Volumes/2 TB/data/Source2/tiny-process-library/tests/io_test.cpp
+process.hpp
+/Volumes/2 TB/data/Source2/tiny-process-library/tests/process.hpp
+cassert
+-
+cstdio
+-
+fstream
+-
+iostream
+-
+sstream
+-
+
