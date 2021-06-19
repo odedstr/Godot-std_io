@@ -8,37 +8,22 @@
 #ifndef std_io_h
 #define std_io_h
 
-#include "core/reference.h"
-#include "core/func_ref.h"
-#include "process.hpp"
+#include "core/object/ref_counted.h"
 
-using namespace std;
-using namespace TinyProcessLib;
-
-class STD_IO : public Reference {
-    GDCLASS(STD_IO, Reference);
+class STD_IO : public RefCounted {
+    GDCLASS(STD_IO, RefCounted);
 
     int count;
-    Process* process = nullptr;
-    Ref<FuncRef> godot_output_callback;
-
 
 protected:
     static void _bind_methods();
-    
-    
 
 public:
-    
-    std::string godot_string_std_string(String godot_string);
+    void add(int p_value);
+    void reset();
+    int get_total() const;
 
     STD_IO();
-    
-    int start_process(String path);
-    int stop_process();
-    int send_command(String command);
-    void set_stdout_callback(Ref<FuncRef> callback );
-
 };
 
 
